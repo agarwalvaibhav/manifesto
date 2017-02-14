@@ -29,24 +29,24 @@ string = Simple Audio Interface
 ; - Class and protocol of bundle and cport must be marked as 0x00.
 ;
 ; Control protocol on CPort 0
-;[cport-descriptor 0]
-;bundle = 0
-;protocol = 0x00
+[cport-descriptor 0]
+bundle = 0
+protocol = 0x00
 ;
 ; Control protocol Bundle 0
-;[bundle-descriptor 0]
-;class = 0
+[bundle-descriptor 0]
+class = 0
 
 ; I2S mgmt protocol on CPort 1
 [cport-descriptor 1]
 bundle = 1
-protocol = 0x0a
+protocol = 0x12
 
 ; I2S data reciever on CPort 2
 [cport-descriptor 2]
 bundle = 1
-protocol = 0x12
+protocol = 0x13
 
 ; Bundle 1
 [bundle-descriptor 1]
-class = 0x0a 
+class = 0x12
